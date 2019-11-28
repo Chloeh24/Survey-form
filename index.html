@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Juice bar survey form</title>
+    <link href='styles.css' type='text/css' rel='stylesheet' />
+  </head>
+
+<body>
+  <h1 id="title">Juice Jam Customer Survey</h1>
+  <form id="survey-form" method="GET" action="#">
+    <p id="description">Let us know how we can improve your experience at The Juice Jam!</p>
+    <div class="row">
+      <div class="label">
+        <label id="name-label" for="name">*Name:</label></div>
+      <div class="data-input">
+        <input id="name" type="text" class="input-field" placeholder="Enter your name" required></div>
+    </div>
+    <div class="row">
+      <div class="label">
+        <label id="number-label" for="age">*Age:</label></div>
+      <div class="data-input">
+        <input id="number" type="number" min="1" max="100" class="input-field" placeholder="Enter your age" required></div>
+    </div>
+    <div class="row">
+      <div class="label">
+        <label id="email-label" for="email">*Email:</label></div>
+      <div class="data-input">
+        <input id="email" type="email" class="input-field" placeholder="Enter your email" required></div>
+    </div>
+    <div class="row">
+      <div class="label">
+        <label for="juicefrequency">How often do you have juices or smoothies?</label></div>
+      <div class="data-input">
+        <select id="dropdown" class="dropdown" name="frequency">
+         <option>Daily</option>
+         <option>Weekly</option>
+         <option>Monthly</option>
+         <option>Rarely</option>
+         </select>
+      </div>
+      <div class="row">
+        <div class="label">
+          <label for="preferences"> Which fruit do you like best? (Choose 3)</label></div>
+        <div class="data-input">
+          <ul id="preferences" style="list-style:none">
+            <li class="checkbox"><input name="prefer" type="checkbox" value="1"> Apple</li>
+            <li class="checkbox"><input name="prefer" type="checkbox" value="2"> Banana</li>
+            <li class="checkbox"><input name="prefer" type="checkbox" value="3"> Orange</li>
+            <li class="checkbox"><input name="prefer" type="checkbox" value="4"> Strawberry</li>
+            <li class="checkbox"><input name="prefer" type="checkbox" value="5"> Blueberry</li>
+            <li class="checkbox"><input name="prefer" type="checkbox" value="6"> Peach</li>
+            <li class="checkbox"><input name="prefer" value="7" type="checkbox"> Mango</li>
+            <li class="checkbox"><input name="prefer" type="checkbox" value="8"> Coconut</li>
+            <li class="checkbox"><input name="prefer" type="checkbox" value="9"> Pineapple</li>
+            <li class="checkbox"><input name="prefer" type="checkbox" value="10"> Passion Fruit</li>
+          </ul>
+        </div>
+        <p id="survey-info">Please rate us on the following:</p>
+        <div class="row">
+          <div class="label">
+            <label for="food">Quality of food:</label></div>
+          <div class="data-input">
+            <ul style="list-style:none">
+              <li class="radio"><input name="radio-buttons1" value="1" type="radio"><label> Excellent</label></li>
+              <li class="radio"><input name="radio-buttons1" value="2" type="radio"> Good </li>
+              <li class="radio"><input name="radio-buttons1" value="3" type="radio"> Average</li>
+              <li class="radio"><input name="radio-buttons1" value="4" type="radio"> Poor</li>
+            </ul>
+          </div>
+          <div class="row">
+            <div class="label">
+              <label for="service">Speed of service:</label></div>
+            <div class="data-input">
+              <ul style="list-style:none">
+                <li class="radio"><input name="radio-buttons2" value="1" type="radio"><label> Excellent</label></li>
+                <li class="radio"><input name="radio-buttons2" value="2" type="radio"> Good </li>
+                <li class="radio"><input name="radio-buttons2" value="3" type="radio"> Average</li>
+                <li class="radio"><input name="radio-buttons2" value="4" type="radio"> Poor</li>
+              </ul>
+            </div>
+            <div class="row">
+              <div class="label">
+                <label for="cleanliness">Cleanliness:</label></div>
+              <div class="data-input">
+                <ul style="list-style:none">
+                  <li class="radio"><input name="radio-buttons3" value="1" type="radio"><label> Excellent</label></li>
+                  <li class="radio"><input name="radio-buttons3" value="2" type="radio"> Good </li>
+                  <li class="radio"><input name="radio-buttons3" value="3" type="radio"> Average</li>
+                  <li class="radio"><input name="radio-buttons3" value="4" type="radio"> Poor</li>
+                </ul>
+              </div>
+              <div class="row">
+                <div class="label">
+                  <label for="value">Value for money:</label></div>
+                <div class="data-input">
+                  <ul style="list-style:none">
+                    <li class="radio"><input name="radio-buttons4" value="1" type="radio"><label> Excellent</label></li>
+                    <li class="radio"><input name="radio-buttons4" value="2" type="radio"> Good </li>
+                    <li class="radio"><input name="radio-buttons4" value="3" type="radio"> Average</li>
+                    <li class="radio"><input name="radio-buttons4" value="4" type="radio"> Poor</li>
+                  </ul>
+                </div>
+                <div class="row">
+                  <div class="label">
+                    <label for="comments">Any Other Comments or Suggestions?</label>
+                  </div>
+                  <div class="data-input">
+                    <textarea id="comments" class="input-field" cols="40" rows="8" name="comment" placeholder="Enter your comment here..."></textarea>
+                  </div>
+                </div>
+                <div class="button">
+                  <button id="submit" type="submit">Submit</button></div>
+  </form>
+  </body>
+</html>

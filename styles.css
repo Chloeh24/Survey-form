@@ -1,0 +1,101 @@
+body {
+  background-image: url(https://i.pinimg.com/originals/10/c4/22/10c42205310f7fd49ef8b9224550d5ec.jpg);
+  background-size: cover;
+  font-family: verdana, serif;
+  text-align: justify;
+  margin: 100px 200px;
+}
+
+h1 {
+  font-family: monospace;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  text-shadow: 4px 4px orangered;
+}
+
+form {
+  background-color: white;
+  padding: 20px 80px;
+  border: 4px solid tomato;
+}
+
+#description {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.row {
+  padding: 5px;
+
+}
+.label {
+  font-size: 1rem;
+  display: inline-block;
+  text-align: right;
+  padding: 10px 7px;
+  vertical-align: top;
+  width: 35%
+}
+
+.data-input {
+  display: inline-block;
+  text-align: left;
+  vertical-align: right;
+  padding: 10px;
+
+}
+
+.input-field {
+  height: 25px;
+  width: 250px;
+}
+
+.dropdown {
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+
+}
+#preferences {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+.checkbox {
+  padding: 6px;
+}
+
+.radio {
+  position: relative;
+  top: -15px;
+  padding: 2px
+}
+
+ul {
+  padding: 10px auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+#submit {
+  height: 50px;
+  width: 140px;
+  background-color: lightgrey;
+  border-radius: 4px;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+#submit:hover {
+  background-color: grey;
+}
+
+#submit: active {
+  transform: translateY(-4px);
+}
